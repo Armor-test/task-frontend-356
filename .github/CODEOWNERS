@@ -1,0 +1,35 @@
+# CODEOWNERS file for task-frontend-356
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-test @Armor-test/dept-reporting @Armor-test/squad-search
+
+# Directory ownership
+/common/ @Armor-test/grp-search @Armor-test/squad-cloud @Armor-test/unit-test
+/internal/ @Armor-test/team-reporting @Armor-test/squad-product
+/static/ @Armor-test/team-governance @Armor-test/dept-logging @Armor-test/grp-search
+/test/ @Armor-test/dept-release @Armor-test/squad-search
+/examples/ @Armor-test/team-core @Armor-test/dept-release
+/modules/ @Armor-test/grp-payments @Armor-test/dept-api @Armor-test/team-logging
+/extensions/ @Armor-test/grp-integration @Armor-test/unit-cloud
+/docs/ @Armor-test/dept-identity @Armor-test/squad-product
+/scripts/ @Armor-test/grp-search @Armor-test/squad-tooling
+/middleware/ @Armor-test/team-governance @Armor-test/squad-performance
+
+# File type ownership
+*.xml @Armor-test/squad-database @Armor-test/dept-api
+*.scala @Armor-test/dept-identity @Armor-test/grp-storage @Armor-test/squad-cache
+*.cpp @Armor-test/grp-search @Armor-test/team-security @Armor-test/squad-performance
+*.java @Armor-test/dept-ui @Armor-test/squad-apps @Armor-test/squad-ml
+*.c @Armor-test/dept-identity @Armor-test/dept-billing
+*.tsx @Armor-test/squad-search @Armor-test/squad-ux @Armor-test/dept-data
+*.properties @Armor-test/grp-storage @Armor-test/dept-release
+*.sql @Armor-test/team-logging @Armor-test/dept-logging @Armor-test/grp-integration
+*.go @Armor-test/dept-ui @Armor-test/grp-storage
+*.py @Armor-test/grp-payments @Armor-test/squad-reporting @Armor-test/dept-security
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+package.json @Armor-test/dependency-team @Armor-test/security
+
+# Additional ownership rules
+*.custom0 @Armor-test/squad-reporting @Armor-test/dept-logging
